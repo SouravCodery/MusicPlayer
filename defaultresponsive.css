@@ -25,7 +25,7 @@
     #carousel div:hover:nth-child(3) {
         right: 12%;
     }
-    input[type="checkbox"]:checked ~ #playlisttop, input[type="checkbox"]:checked ~#quesongs, input[type="checkbox"]:checked ~#similars  {
+    input[type="checkbox"]:not(:checked) ~ #playlisttop, input[type="checkbox"]:not(:checked) ~#quesongs, input[type="checkbox"]:not(:checked) ~#similars  {
        display: none;
        background: radial-gradient( #270361,  #060233, #020016, #000005, #000000);
     }
