@@ -1,0 +1,99 @@
+/* The Website has been made taking Desktop First in Consideration */
+
+/* This page has all the media queries to common to both the pages to make the website responsive. */
+
+@media (max-width: 1538px) {
+    /* Here list is hidden and then it is only visible when the list icon is clicked. */
+    #list {
+        background: radial-gradient( #270361,  #060233, #020016, #000005, #000000);
+    }
+    #list label {
+        display: block;
+    }
+    #content {
+        grid-column: 2 / -2;
+    }
+    #carousel div:nth-child(1) {
+        left: 10%;
+    }
+    #carousel div:nth-child(3) {
+        right: 10%;
+    }
+    #carousel div:hover:nth-child(1) {
+        left: 12%;
+    }
+    #carousel div:hover:nth-child(3) {
+        right: 12%;
+    }
+    input[type="checkbox"]:checked ~ #playlisttop, input[type="checkbox"]:checked ~#quesongs, input[type="checkbox"]:checked ~#similars  {
+       display: none;
+       background: radial-gradient( #270361,  #060233, #020016, #000005, #000000);
+    }
+}
+/* Various media queries are made as per the screen width from here on. */
+@media (max-width: 1322px) {
+    #utility, #sound {
+        display: none;
+    }
+}
+@media (max-width: 825px) {
+    #player > div {
+        transform: scale(0.8);
+    }
+}
+@media (max-width: 672px) {
+    nav > div {
+        transform: scale(0.8);
+    }
+    .lr {
+        transform: scale(0.7);
+        margin: 0.5px;
+    }
+    #artists {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 2;
+    }
+    #hologram {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        display: flex;
+        align-self: center;
+        transform: scale(0.6);
+    }
+    #station {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+        row-gap: 2vw;
+        column-gap: 2vw;
+        transform: scale(0.9);
+    }
+    #genre {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);  
+    }
+    #genre {
+        height: max-content;
+        width: max-content;
+    }
+    #genre img, .gtype{
+        height: 30.64vw;
+        width: 57.6vw;
+        margin: 2vw 0px;
+    }
+    .latesteh {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 2;
+    }
+    #list {
+        transform: scaleX(0.9);    
+    }
+
+    #control {
+        transform: scale(0.8);
+    }
+}
+@media (max-width: 640px) {
+    #songname, #singer {
+        display: none;
+    }
+}

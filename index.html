@@ -1,0 +1,573 @@
+<!-- This is the Main Page of the Music Player -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        There are three css files connected. default.css has styles common to both the page. main.css has styles for index.html. 
+        defaultresponsive.css has media queries for both the pages.
+    -->
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="defaultresponsive.css">
+    <!-- 
+        Google Fonts are used for the two Pages. Font Awesome has been used for various icons. Font Awesome script src has been at the bottom.
+     -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500;800&family=Quicksand:wght@300;515&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <title>SC Player: Home</title>
+</head>
+<body>
+    <!-- The Entire Page has been created using Grid and Flexbox. main-container has been used to divide page into different rows and columns of grid. -->
+    <div id="main-container">
+
+        <!-- Navigation Start -->
+        <nav>
+            <!-- The logo has been created using div only from scratch. -->
+            <div id="logo">
+                <div id="S">
+                    S
+                </div>
+                <div id="C">
+                    C
+                </div>
+                <div id="mp">
+                    MusicPlayer
+                </div>
+            </div>
+            <div>
+                <a href="playlist.html">Fav</a>
+            </div>
+            <div id="search">
+                <div><i class="fas fa-search navIcon"></i></div>
+                <div><input type="search"></div>
+                <div><i class="fas fa-microphone navIcon"></i></div>
+            </div>
+            <div><i class="fas fa-bell"></i></div>
+            <div><img src="Assets\Song_Cover\cover.jpg" alt=""></div>
+        </nav>
+        <!-- Navigation End -->
+
+        <!-- The content comprises of carousel, latest release, artists, stations, genre, latest english, latest hindi. -->
+
+        <!-- Content Start -->
+        <div id="content">
+
+            <!-- Carousel Start -->
+            <div id="carousel">
+                <div>
+                    <img src="Assets\Carousel\Screenshot (47).png" alt="caroimg1">
+                </div>
+                <div>
+                    <img src="Assets\Carousel\Screenshot (48).png" alt="caroimg2">
+                </div>
+                <div>
+                    <img src="Assets\Carousel\Screenshot (49).png" alt="caroimg3">
+                </div>
+            </div>
+            <!-- Carousel End -->
+
+            <!-- Latest Release Start -->
+            <div>
+                <div class="heading">Latest Release</div>
+                <div id="latestRelease">
+                    <!-- class lr has been used for the four latest release songs -->
+                    <div class="lr">
+                        <div><img src="Assets\Song_Cover\Screenshot (49).png" alt=""><i class="fas fa-play play"></i></div>
+                        <div><p>Translation</p><p>Nov 29th, 2018</p></div>
+                        <div class="options">
+                                <!-- Check box has been used for the options toggle view/hide. The box has been hidden. -->
+                                <label for="lr-toggle1"><i class="fas fa-ellipsis-h"></i></label>
+                                <input type="checkbox" id="lr-toggle1">
+                                <div class="lr-dropdown">
+                                    <div>
+                                        <p>
+                                            <i class="fas fa-play"></i>
+                                            <a href="playlist.html">&nbsp &nbsp Play Now</a>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p><i class="fas fa-plus icon"></i>&nbsp &nbsp Add to Queue</p>
+                                    </div>
+                                    <div>
+                                        <p><i class="fas fa-list"></i>&nbsp &nbsp Add to Favorites</p>
+                                    </div>
+                                    <div>
+                                        <p><i class="fas fa-info-circle"></i>&nbsp &nbsp Get Info</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    4:44
+                                </p>
+                        </div>
+                    </div>
+                    <div class="lr">
+                        <div><img src="Assets\Song_Cover\Screenshot (51).png" alt=""><i class="fas fa-play play"></i></div>
+                        <div><p>Kedarnath</p><p>Apr 4th, 2019</p></div>
+                        <div class="options">
+                                <label for="lr-toggle2"><i class="fas fa-ellipsis-h"></i></label>
+                                <input type="checkbox" id="lr-toggle2">
+                                <div class="lr-dropdown">
+                                    <div>
+                                        <p>
+                                            <i class="fas fa-play"></i>
+                                            <a href="playlist.html">&nbsp &nbsp Play Now</a>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p><i class="fas fa-plus icon"></i>&nbsp &nbsp Add to Queue</p>
+                                    </div>
+                                    <div>
+                                        <p><i class="fas fa-list"></i>&nbsp &nbsp Add to Favorites</p>
+                                    </div>
+                                    <div>
+                                        <p><i class="fas fa-info-circle"></i>&nbsp &nbsp Get Info</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    5:06
+                                </p>
+                        </div>
+                    </div>
+                    <div class="lr">
+                        <div><img src="Assets\Song_Cover\Screenshot (53).png" alt=""><i class="fas fa-play play"></i></div>
+                        <div><p>Munda Jachda Ae</p><p>Feb 17th, 2016</p></div>
+                        <div class="options">
+                                <label for="lr-toggle3"><i class="fas fa-ellipsis-h"></i></label>
+                                <input type="checkbox" id="lr-toggle3">
+                                <div class="lr-dropdown">
+                                    <div>
+                                        <p>
+                                            <i class="fas fa-play"></i>
+                                            <a href="playlist.html">&nbsp &nbsp Play Now</a>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p><i class="fas fa-plus icon"></i>&nbsp &nbsp Add to Queue</p>
+                                    </div>
+                                    <div>
+                                        <p><i class="fas fa-list"></i>&nbsp &nbsp Add to Favorites</p>
+                                    </div>
+                                    <div>
+                                        <p><i class="fas fa-info-circle"></i>&nbsp &nbsp Get Info</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    3:20
+                                </p>
+                        </div>
+                    </div>
+                    <div class="lr">
+                        <div><img src="Assets\Song_Cover\Screenshot (50).png" alt=""><i class="fas fa-play play"></i></div>
+                        <div><p>Bigger Love</p><p>Jul 14th, 2020</p></div>
+                        <div class="options">
+                                <label for="lr-toggle4"><i class="fas fa-ellipsis-h"></i></label>
+                                <input type="checkbox" id="lr-toggle4">
+                                <div class="lr-dropdown">
+                                    <div>
+                                        <p>
+                                            <i class="fas fa-play"></i>
+                                            <a href="playlist.html">&nbsp &nbsp Play Now</a>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p><i class="fas fa-plus icon"></i>&nbsp &nbsp Add to Queue</p>
+                                    </div>
+                                    <div>
+                                        <p><i class="fas fa-list"></i>&nbsp &nbsp Add to Favorites</p>
+                                    </div>
+                                    <div>
+                                        <p><i class="fas fa-info-circle"></i>&nbsp &nbsp Get Info</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    2:30
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Latest Release End -->
+
+            <!-- Artists Start -->
+            <div>
+                <div class="heading">Artists</div>
+                <div id="artists">
+                    <div>
+                        <div><img src="Assets\Artists\Screenshot (58).png" alt=""></div>
+                        <div class="playa"><a href="playlist.html"><i class="fas fa-play"></i></a></div>
+                        <div>Sonu Nigam</div>
+                    </div>
+                    <div>
+                        <div><img src="Assets\Artists\Screenshot (63).png" alt=""></div>
+                        <div class="playa"><a href="playlist.html"><i class="fas fa-play"></i></a></div>
+                        <div>Armaan Malik</div>
+                    </div>
+                    <div>
+                        <div><img src="Assets\Artists\Screenshot (61).png" alt=""></div>
+                        <div class="playa"><a href="playlist.html"><i class="fas fa-play"></i></a></div>
+                        <div>Shreya Ghoshal</div>
+                    </div>
+                    <div>
+                        <div><img src="Assets\Artists\Screenshot (60).png" alt=""></div>
+                        <div class="playa"><a href="playlist.html"><i class="fas fa-play"></i></a></div>
+                        <div>Atif Aslam</div>
+                    </div>
+                    <div>
+                        <div><img src="Assets\Artists\Screenshot (62).png" alt=""></div>
+                        <div class="playa"><a href="playlist.html"><i class="fas fa-play"></i></a></div>
+                        <div>Palak Muchhal</div>
+                    </div>
+                    <div>
+                        <div><img src="Assets\Artists\Screenshot (59).png" alt=""></div>
+                        <div class="playa"><a href="playlist.html"><i class="fas fa-play"></i></a></div>
+                        <div>Arijit Singh</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Artists End -->
+
+            <!-- Stations Start -->
+            <div id="stations">
+                <div id="hologram">
+                    <div>
+                        <div><i class="fas fa-headphones-alt"></i></div>
+                        <div><i class="fas fa-podcast"></i></div>
+                        <div>Stations</div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div id="station">
+                    <div><img src="Assets\Stations\Screenshot (64).png" alt=""></div>
+                    <div><img src="Assets\Stations\Screenshot (65).png" alt=""></div>
+                    <div><img src="Assets\Stations\Screenshot (66).png" alt=""></div>
+                    <div><img src="Assets\Stations\Screenshot (67).png" alt=""></div>
+                    <div><img src="Assets\Stations\Screenshot (68).png" alt=""></div>
+                    <div><img src="Assets\Stations\Screenshot (69).png" alt=""></div>
+                </div>  
+            </div>
+            <!-- Stations End -->
+
+            <!-- Genre Start -->
+            <div id="genre">
+                <div class="gtype">
+                    <div><img src="Assets\Genre\259629.jpg" alt=""></div>
+                    <div>Electronic</div>
+                </div>
+                <div class="gtype">
+                    <div><img src="Assets\Genre\289847.jpg" alt=""></div>
+                    <div>Rock</div>
+                </div>
+                <div class="gtype">
+                    <div><img src="Assets\Genre\1912567.jpg" alt=""></div>
+                    <div>Road Trip</div>
+                </div>
+            </div>
+            <!-- Genre End -->
+
+            <!-- Latest English Start -->
+            <div>
+                <div class="heading">Latest English</div>
+                <!-- Class latesteh has been used for Latest English and Latest Hindi to give same style. -->
+                <div id="latestEnglish" class="latesteh">
+                    <div>
+                        <div><img src="Assets\Hindi Latest\Screenshot (65).png" alt=""></div>
+                        <div>Name</div><div>Apr 4th, 2018</div>
+                    </div>
+                    <div>
+                        <div><img src="Assets\English Latest\Screenshot (72).png" alt=""></div>
+                        <div>Name</div><div>Apr 4th, 2018</div>
+                    </div>
+                    <div>
+                        <div><img src="Assets\English Latest\Screenshot (73).png" alt=""></div>
+                        <div>Name</div><div>Apr 4th, 2018</div>
+                    </div>
+                    <div>
+                        <div><img src="Assets\English Latest\Screenshot (74).png" alt=""></div>
+                        <div>Name</div><div>Apr 4th, 2018</div>
+                    </div>
+                    <div>
+                        <div><img src="Assets\English Latest\Screenshot (75).png" alt=""></div>
+                        <div>Name</div><div>Apr 4th, 2018</div>
+                    </div>
+                    <div>
+                        <div><img src="Assets\English Latest\Screenshot (76).png" alt=""></div>
+                        <div>Name</div><div>Apr 4th, 2018</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Latest English End -->
+
+            <!-- Latest Hindi Start -->
+            <div>
+                <div class="heading">Latest Hindi</div>
+                <div id="latestHindi" class="latesteh">
+                    <div>
+                        <div><img src="Assets\Hindi Latest\Screenshot (65).png" alt=""></div>
+                        <div>Name</div><div>Apr 4th, 2018</div>
+                    </div>
+                    <div>
+                        <div><img src="Assets\Hindi Latest\Screenshot (66).png" alt=""></div>
+                        <div>Name</div><div>Apr 4th, 2018</div>
+                    </div>
+                    <div>
+                        <div><img src="Assets\Hindi Latest\Screenshot (67).png" alt=""></div>
+                        <div>Name</div><div>Apr 4th, 2018</div>
+                    </div>
+                    <div>
+                        <div><img src="Assets\Hindi Latest\Screenshot (68).png" alt=""></div>
+                        <div>Name</div><div>Apr 4th, 2018</div>
+                    </div>
+                    <div>
+                        <div><img src="Assets\Hindi Latest\Screenshot (69).png" alt=""></div>
+                        <div>Name</div><div>Apr 4th, 2018</div>
+                    </div>
+                    <div>
+                        <div><img src="Assets\Hindi Latest\Screenshot (70).png" alt=""></div>
+                        <div>Name</div><div>Apr 4th, 2018</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Latest Hindi End -->
+        </div>
+        <!-- Content End -->
+
+        <!-- Player Start -->
+        <div id="player">
+            <!-- Control comprises of pause, previous, next button which have been made using div from scratch. -->
+            <div id="control">
+                <!-- Plate has been used to give control border which has transparent background which changes to gradient neon colours on hover. -->
+                <div id="plate">
+                    <!-- Four span with class plates has been used to give blur filter of different values. It is visible when the border is hovered. -->
+                    <span class="plates"></span>
+                    <span class="plates"></span>
+                    <span class="plates"></span>
+                    <span class="plates"></span>
+                </div>
+                <div id="prev" class="buttons"></div>
+                <div id="pause" class="buttons"></div>
+                <div id="next" class="buttons"></div>
+                <div id="playing"><img src="Assets\Song_Cover\filhal.jpg" alt=""></div>
+            </div>
+            <div id="songname">
+                <h3>Filhall</h3>
+            </div>
+            <div id="singer">
+                <h4>- Nupur Sanon</h4>
+            </div>
+            <div id="playericons">
+                <div><i class="fas fa-random icon"></i></div>
+                <div><i class="far fa-heart icon"></i></div>
+                <div><i class="fas fa-redo-alt icon"></i></div>
+            </div>
+            <div id="seeker">
+                <div>1:39</div>
+                <div><input type="range"></div>
+                <div>4:04</div>
+                
+            </div>
+            <div id="utility">
+                <div><i class="fas fa-list-alt icon"></i></div>
+                <div><i class="fas fa-plus icon"></i></div>
+                <div><i class="fas fa-expand-alt icon"></i></div>
+            </div>
+            <div id="sound">
+                <div><i class="fas fa-volume-up icon"></i></div>
+                <div><input type="range"></div>
+            </div>
+        </div>
+        <!-- Player End -->
+
+        <!-- My Playlist Start -->
+        <div id="list">
+            <!-- Check Box has been used for List View/Hide on smaller screens else it is always visible on bigger sceens -->
+            <label for="listtoggler" id="listtogglericon"><i class="fas fa-list"></i></label>
+            <input type="checkbox" id="listtoggler">
+            <div id="playlisttop">
+                <div class="heading">My&nbspPlaylist</div>
+                <div id="queue">
+                    <!-- Checkbox has been used to toggle dropdown view/hide -->
+                    <label for="queopt">Queue+</label>
+                    <input type="checkbox" id="queopt">
+                    <div id="quedrop">
+                        <div>
+                            <p><i class="fas fa-list"></i>&nbsp &nbsp Playlists</p>
+                        </div>
+                        <div>
+                            <p><i class="far fa-heart icon"></i>&nbsp &nbsp Favourite Songs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quesongs id has been used for the container of all the songs in the list. -->
+            <div id="quesongs">
+                <!-- Quesong class has been used to give style to all the songs -->
+                <div class="quesong">
+                    <div>
+                        01
+                    </div>
+                    <div>
+                        <img src="Assets\Hindi Latest\Screenshot (65).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Singer
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>
+                    </div>
+                </div>
+                <div class="quesong">
+                    <div>
+                        02
+                    </div>
+                    <div>
+                        <img src="Assets\English Latest\Screenshot (72).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Singer
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>
+                    </div>
+                </div>
+                <div class="quesong">
+                    <div>
+                        03
+                    </div>
+                    <div>
+                        <img src="Assets\English Latest\Screenshot (73).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Singer
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>
+                    </div>
+                </div>
+                <div class="quesong">
+                    <div>
+                        04
+                    </div>
+                    <div>
+                        <img src="Assets\English Latest\Screenshot (74).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Singer
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>
+                    </div>
+                </div>
+                <div class="quesong">
+                    <div>
+                        05
+                    </div>
+                    <div>
+                        <img src="Assets\English Latest\Screenshot (75).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Singer
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>
+                    </div>
+                </div>
+                <div class="quesong">
+                    <div>
+                        06
+                    </div>
+                    <div>
+                        <img src="Assets\English Latest\Screenshot (76).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Singer
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>
+                    </div>
+                </div>
+                <div class="quesong">
+                    <div>
+                        07
+                    </div>
+                    <div>
+                        <img src="Assets\Hindi Latest\Screenshot (66).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Singer
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>
+                    </div>
+                </div>
+                <div class="quesong">
+                    <div>
+                        08
+                    </div>
+                    <div>
+                        <img src="Assets\Hindi Latest\Screenshot (67).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Singer
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>
+                    </div>
+                </div>
+                <div class="quesong">
+                    <div>
+                        09
+                    </div>
+                    <div>
+                        <img src="Assets\Hindi Latest\Screenshot (68).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Singer
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>
+                    </div>
+                </div>
+                <div class="quesong">
+                    <div>
+                        10
+                    </div>
+                    <div>
+                        <img src="Assets\Hindi Latest\Screenshot (69).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Singer
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>
+                    </div>
+                </div>
+                <div class="quesong">
+                    <div>
+                        11
+                    </div>
+                    <div>
+                        <img src="Assets\Hindi Latest\Screenshot (70).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Singer
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>
+                    </div>
+                </div>                
+            </div>
+        </div>
+        <!-- My Playlist End -->
+
+    </div>
+    <!-- Main Container End -->
+
+    <!-- Font Awesome Script Source -->
+
+    <script src="https://kit.fontawesome.com/cce3793589.js" crossorigin="anonymous"></script>
+</body>
+</html>

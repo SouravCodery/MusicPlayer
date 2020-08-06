@@ -1,0 +1,423 @@
+<!-- This is the Single Playlist Page of the Music Player -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        There are three css files connected. default.css has styles common to both the page. playlist.css has styles for playlist.html. 
+        defaultresponsive.css has media queries for both the pages.
+    -->
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="playlist.css">
+    <link rel="stylesheet" href="defaultresponsive.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500;800&family=Quicksand:wght@300;515&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <title>SC Player: PlayList</title>
+</head>
+<body>
+    <!-- The Entire Page has been created using Grid and Flexbox. main-container has been used to divide page into different rows and columns of grid. -->
+
+    <!-- Main Container Start -->
+    <div id="main-container">
+
+        <!-- Navigation Start -->
+        <nav>
+            <div id="logo">
+                <div id="S">
+                    S
+                </div>
+                <div id="C">
+                    C
+                </div>
+                <div id="mp">
+                    MusicPlayer
+                </div>
+            </div>
+            <div>
+                <a href="index.html">Home</a>
+            </div>
+            <div id="search">
+                <div><i class="fas fa-search navIcon"></i></div>
+                <div><input type="search"></div>
+                <div><i class="fas fa-microphone navIcon"></i></div>
+            </div>
+            <div><i class="fas fa-bell"></i></div>
+            <div><img src="Assets\Song_Cover\cover.jpg" alt=""></div>
+        </nav>
+        <!-- Navigation End -->
+
+        <!-- The content comprises of Cover and Singer Songs. Cover has singer's photo and details about him/ her. -->
+
+        <!-- Content Start -->
+        <div id="content">
+            <div id="cover">
+                <div><img src="Assets\PlayList\Cover\169877.jpg" alt=""></div>
+                <div id="singerinfo">
+                    <div id="name">
+                        <div class="heading">Armaan&nbspMalik</div>
+                        <div>851&nbspFollowers</div>
+                    </div>
+                    <div id="band">Malik Brothers Band</div>
+                    <div id="detail">
+                        Armaan Malik (born 22 July 1995) is an Indian singer, songwriter and an actor. He is known for his singing in Hindi, Telugu, Kannada, Tamil, Bengali, Gujarati & Marathi. A finalist on Sa Re Ga Ma Pa L'il Champs (2006), Armaan advanced to eighth place with public votes. He is the brother of composer Amaal Mallik. Previously represented by Universal Music India, he is now signed on by T-Series. He has also signed with Arista records.
+                    </div>
+                    <div id="follow"><button>Play&nbspAll</button> <button>Follow</button></div>
+                    <div id="track">247&nbspTracks&nbsp|&nbsp128&nbspAlbums</div>
+                </div>
+            </div>
+
+            <!-- Singer Songs Start -->
+            <div id="singersongs">
+                <div class="singersong">
+                    <div>
+                        01
+                    </div>
+                    <div>
+                        <img src="Assets\Hindi Latest\Screenshot (65).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Album
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>&nbsp&nbsp&nbsp<i class="fas fa-plus icon"></i>
+                    </div>
+                </div>
+                <div class="singersong">
+                    <div>
+                        02
+                    </div>
+                    <div>
+                        <img src="Assets\Hindi Latest\Screenshot (66).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Album
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>&nbsp&nbsp&nbsp<i class="fas fa-plus icon"></i>
+                    </div>
+                </div>
+                <div class="singersong">
+                    <div>
+                        03
+                    </div>
+                    <div>
+                        <img src="Assets\Hindi Latest\Screenshot (67).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Album
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>&nbsp&nbsp&nbsp<i class="fas fa-plus icon"></i>
+                    </div>
+                </div>
+                <div class="singersong">
+                    <div>
+                        04
+                    </div>
+                    <div>
+                        <img src="Assets\Hindi Latest\Screenshot (68).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Album
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>&nbsp&nbsp&nbsp<i class="fas fa-plus icon"></i>
+                    </div>
+                </div>
+                <div class="singersong">
+                    <div>
+                        05
+                    </div>
+                    <div>
+                        <img src="Assets\Hindi Latest\Screenshot (69).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Album
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>&nbsp&nbsp&nbsp<i class="fas fa-plus icon"></i>
+                    </div>
+                </div>
+                <div class="singersong">
+                    <div>
+                        06
+                    </div>
+                    <div>
+                        <img src="Assets\Hindi Latest\Screenshot (70).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Album
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>&nbsp&nbsp&nbsp<i class="fas fa-plus icon"></i>
+                    </div>
+                </div>
+                <div class="singersong">
+                    <div>
+                        07
+                    </div>
+                    <div>
+                        <img src="Assets\English Latest\Screenshot (71).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Album
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>&nbsp&nbsp&nbsp<i class="fas fa-plus icon"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Singer Songs End -->
+
+        </div>
+        <!-- Content End -->
+        
+        <!-- Player Start -->
+        <div id="player">
+            <div id="control">
+                <div id="plate">
+                    <span class="plates"></span>
+                    <span class="plates"></span>
+                    <span class="plates"></span>
+                    <span class="plates"></span>
+                </div>
+                <div id="prev" class="buttons"></div>
+                <div id="pause" class="buttons"></div>
+                <div id="next" class="buttons"></div>
+                <div id="playing"><img src="Assets\Song_Cover\filhal.jpg" alt=""></div>
+            </div>
+            <div id="songname">
+                <h3>Filhall</h3>
+            </div>
+            <div id="singer">
+                <h4>- Nupur Sanon</h4>
+            </div>
+            <div id="playericons">
+                <div><i class="fas fa-random icon"></i></div>
+                <div><i class="far fa-heart icon"></i></div>
+                <div><i class="fas fa-redo-alt icon"></i></div>
+            </div>
+            <div id="seeker">
+                <div>1:39</div>
+                <div><input type="range"></div>
+                <div>4:04</div>
+                
+            </div>
+            <div id="utility">
+                <div><i class="fas fa-list-alt icon"></i></div>
+                <div><i class="fas fa-plus icon"></i></div>
+                <div><i class="fas fa-expand-alt icon"></i></div>
+            </div>
+            <div id="sound">
+                <div><i class="fas fa-volume-up icon"></i></div>
+                <div><input type="range"></div>
+            </div>
+        </div>
+        <!-- Player End -->
+
+        <!-- The list comprised of Similar Artists and Recently Played -->
+        <div id="list">
+            <!-- Checkbox has been used to toggle view/hide list on smaller screens else list is always visible on big screens. -->
+            <label for="listtoggler" id="listtogglericon"><i class="fas fa-list"></i></label>
+            <input type="checkbox" id="listtoggler">
+            <div id="playlisttop">
+                <div class="heading">Similar&nbspArtists</div>
+                <div>
+                    View&nbspAll
+                </div>
+            </div>
+            <div id="similars">
+                <div class="similar">
+                    <div><img src="Assets\Song_Cover\Screenshot (50).png" alt=""></div>
+                    <div><p>Bigger Love</p><p>Singer</p></div>
+                    <div><div><i class="fas fa-plus icon"></i></div><div>4:36</div></div>
+                </div>
+                <div class="similar">
+                    <div><img src="Assets\Song_Cover\Screenshot (50).png" alt=""></div>
+                    <div><p>Bigger Love</p><p>Singer</p></div>
+                    <div><div><i class="fas fa-plus icon"></i></div><div>4:36</div></div>
+                </div>
+                <div class="similar">
+                    <div><img src="Assets\Song_Cover\Screenshot (50).png" alt=""></div>
+                    <div><p>Bigger Love</p><p>Singer</p></div>
+                    <div><div><i class="fas fa-plus icon"></i></div><div>4:36</div></div>
+                </div>
+                <div class="similar">
+                    <div><img src="Assets\Song_Cover\Screenshot (50).png" alt=""></div>
+                    <div><p>Bigger Love</p><p>Singer</p></div>
+                    <div><div><i class="fas fa-plus icon"></i></div><div>4:36</div></div>
+                </div>
+            </div>
+            <div id="playlisttop">
+                <div class="heading">Recently&nbspPlayed</div>
+                <div>
+                    View&nbspAll
+                </div>
+            </div>
+            <div id="quesongs">
+                <div class="quesong">
+                    <div>
+                        01
+                    </div>
+                    <div>
+                        <img src="Assets\Hindi Latest\Screenshot (65).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Singer
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>
+                    </div>
+                </div>
+                <div class="quesong">
+                    <div>
+                        02
+                    </div>
+                    <div>
+                        <img src="Assets\English Latest\Screenshot (72).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Singer
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>
+                    </div>
+                </div>
+                <div class="quesong">
+                    <div>
+                        03
+                    </div>
+                    <div>
+                        <img src="Assets\English Latest\Screenshot (73).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Singer
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>
+                    </div>
+                </div>
+                <div class="quesong">
+                    <div>
+                        04
+                    </div>
+                    <div>
+                        <img src="Assets\English Latest\Screenshot (74).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Singer
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>
+                    </div>
+                </div>
+                <div class="quesong">
+                    <div>
+                        05
+                    </div>
+                    <div>
+                        <img src="Assets\English Latest\Screenshot (75).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Singer
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>
+                    </div>
+                </div>
+                <div class="quesong">
+                    <div>
+                        06
+                    </div>
+                    <div>
+                        <img src="Assets\English Latest\Screenshot (76).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Singer
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>
+                    </div>
+                </div>
+                <div class="quesong">
+                    <div>
+                        07
+                    </div>
+                    <div>
+                        <img src="Assets\Hindi Latest\Screenshot (66).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Singer
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>
+                    </div>
+                </div>
+                <div class="quesong">
+                    <div>
+                        08
+                    </div>
+                    <div>
+                        <img src="Assets\Hindi Latest\Screenshot (67).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Singer
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>
+                    </div>
+                </div>
+                <div class="quesong">
+                    <div>
+                        09
+                    </div>
+                    <div>
+                        <img src="Assets\Hindi Latest\Screenshot (68).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Singer
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>
+                    </div>
+                </div>
+                <div class="quesong">
+                    <div>
+                        10
+                    </div>
+                    <div>
+                        <img src="Assets\Hindi Latest\Screenshot (69).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Singer
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>
+                    </div>
+                </div>
+                <div class="quesong">
+                    <div>
+                        11
+                    </div>
+                    <div>
+                        <img src="Assets\Hindi Latest\Screenshot (70).png" alt="">
+                    </div>
+                    <div>
+                        Song <br> Singer
+                    </div>
+                    <div>
+                        <i class="far fa-heart icon"></i>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <!-- Main Container End -->
+
+    <!-- Font Awesome Icons Script Source -->
+    <script src="https://kit.fontawesome.com/cce3793589.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
